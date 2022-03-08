@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: serif;
 }
+a {
+    text-decoration: none;
+}
 .container-fluid {
     background: #191923;
 }
@@ -82,7 +85,7 @@ h2 {
     background: rgb(170, 121, 56);
     padding: 10px 20px;
     margin-left: 75px;
-    margin-top: 130px;
+    margin-top: 100px;
     border-radius: 25px;
     color: #191923;
     transition: all 0.6s ease;
@@ -103,7 +106,7 @@ h2 {
 .col-lg-9 {
     color: white;
     padding: 40px;
-    border-right: 1px solid rgb(150, 145, 145);
+    border-right: 1px solid rgb(56 56 56);
     position: relative;
     left: 24%;
 }
@@ -177,9 +180,9 @@ h2 {
     font-size: 18px;
     font-weight: bold;
 }
-.personal {
+/* .personal {
     margin-left: 20px;
-}
+} */
 .personal div {
     margin-bottom: 20px;
 }
@@ -241,11 +244,73 @@ h2 {
     transform: scale(1.1);
 }
 .product .info {
-    padding-left: 43px;
+    padding-left: 30px;
     padding-top: 15px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
 }
 .info .namePro {
     color: #116917;
+}
+.html {
+    animation: showHtml 2s;
+}
+.css {
+    animation: showCss 2s;
+}
+.js {
+    animation: showJs 2s;
+}
+.React {
+    animation: showReact 2s;
+}
+@keyframes showHtml{
+    0% {
+        width: 0%;
+    } 
+    100% {
+        width: 95%;
+    }
+}
+@keyframes showCss{
+    0% {
+        width: 0%;
+    } 
+    100% {
+        width: 85%;
+    }
+}
+@keyframes showJs{
+    0% {
+        width: 0%;
+    } 
+    100% {
+        width: 55%;
+    }
+}
+@keyframes showReact{
+    0% {
+        width: 0%;
+    } 
+    100% {
+        width: 15%;
+    }
+}
+.icon {
+    position: fixed;
+    top: 30%;
+    right: -150px;
+    height: 500px;
+    width: 250px;
+    font-size: 50px;
+    color: #0d6efd;
+    /* color: #3d8888; */
+}
+.icon i {
+    transition: all .6s ease;
+}
+.icon i:hover {
+    cursor: pointer;
+    color: #3d8888;
+    transform: translateY(-8px);
 }
